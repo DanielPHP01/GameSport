@@ -23,8 +23,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         binding.tvCoins.text = coins.toString()
+        binding.submitBtn.visibility = View.GONE
+
 
         animationImages()
 
@@ -136,6 +137,8 @@ class MainActivity : AppCompatActivity() {
             if (i < answer.length) {
                 resulTVList[i].visibility = View.VISIBLE
             } else resulTVList[i].visibility = View.GONE
+            binding.submitBtn.visibility = View.GONE
+
         }
 
     }
@@ -232,15 +235,15 @@ class MainActivity : AppCompatActivity() {
             userAnswer += resulTVList[it].text
         }
 
-        if (userAnswer.length == answer.length) {
+        if (userAnswer.length == answer.length){
+            binding.submitBtn.visibility = View.VISIBLE
             if (userAnswer == answer) {
                 binding.llResult.visibility = View.VISIBLE
-                try{
+                try {
                     animationCircle()
                 } catch (e: Exception) {
                     Toast.makeText(this, "animationCircle", Toast.LENGTH_SHORT).show()
                 }
-
                 binding.submitBtn.setOnClickListener {
                     forNextQuestion()
                     currentIndex++
@@ -249,6 +252,7 @@ class MainActivity : AppCompatActivity() {
                     binding.animationCircle.visibility = View.GONE
                 }
             } else {
+                binding.submitBtn.visibility = View.GONE
                 binding.llResult.startAnimation(
                     AnimationUtils.loadAnimation(
                         this,

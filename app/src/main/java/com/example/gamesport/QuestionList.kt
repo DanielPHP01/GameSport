@@ -9,12 +9,12 @@ object QuestionList {
             Question(
                 id = 0,
                 pictureList = mutableListOf(
-                    R.drawable.ic_launcher_background,
-                    R.drawable.ic_launcher_background,
-                    R.drawable.ic_launcher_background,
-                    R.drawable.ic_launcher_background
+                    R.drawable.img_1_1,
+                    R.drawable.img_1_2,
+                    R.drawable.img_1_3,
+                    R.drawable.img_1_4
                 ),
-                answer = "QQQQQQ"
+                answer = "FOOTBALL"
             )
         )
 
@@ -22,12 +22,12 @@ object QuestionList {
             Question(
                 id = 1,
                 pictureList = mutableListOf(
-                    R.drawable.ic_launcher_background,
-                    R.drawable.ic_launcher_background,
-                    R.drawable.ic_launcher_background,
-                    R.drawable.ic_launcher_background
+                    R.drawable.img_2_1,
+                    R.drawable.img_2_2,
+                    R.drawable.img_2_3,
+                    R.drawable.img_2_4
                 ),
-                answer = "SHAWQIM"
+                answer = "TRIATLON"
             )
         )
 
@@ -35,12 +35,12 @@ object QuestionList {
             Question(
                 id = 2,
                 pictureList = mutableListOf(
-                    R.drawable.ic_launcher_background,
-                    R.drawable.ic_launcher_background,
-                    R.drawable.ic_launcher_background,
-                    R.drawable.ic_launcher_background
+                    R.drawable.img_3_1,
+                    R.drawable.img_3_2,
+                    R.drawable.img_3_3,
+                    R.drawable.img_3_4
                 ),
-                answer = "ISSI"
+                answer = "FORMULA1"
             )
         )
 
@@ -48,12 +48,12 @@ object QuestionList {
             Question(
                 id = 3,
                 pictureList = mutableListOf(
-                    R.drawable.ic_launcher_background,
-                    R.drawable.ic_launcher_background,
-                    R.drawable.ic_launcher_background,
-                    R.drawable.ic_launcher_background
+                    R.drawable.img_4_1,
+                    R.drawable.img_4_2,
+                    R.drawable.img_4_3,
+                    R.drawable.img_4_4
                 ),
-                answer = "MUZIKA"
+                answer = "AIRSOFT"
             )
         )
 
