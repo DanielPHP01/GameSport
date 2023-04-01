@@ -10,9 +10,7 @@ object QuestionList {
                 id = 0,
                 pictureList = mutableListOf(
                     R.drawable.img_1_1,
-                    R.drawable.img_1_2,
-                    R.drawable.img_1_3,
-                    R.drawable.img_1_4
+                    R.drawable.img_1_2
                 ),
                 answer = "FOOTBALL"
             )
@@ -23,9 +21,7 @@ object QuestionList {
                 id = 1,
                 pictureList = mutableListOf(
                     R.drawable.img_2_1,
-                    R.drawable.img_2_2,
-                    R.drawable.img_2_3,
-                    R.drawable.img_2_4
+                    R.drawable.img_2_2
                 ),
                 answer = "TRIATLON"
             )
@@ -36,9 +32,7 @@ object QuestionList {
                 id = 2,
                 pictureList = mutableListOf(
                     R.drawable.img_3_1,
-                    R.drawable.img_3_2,
-                    R.drawable.img_3_3,
-                    R.drawable.img_3_4
+                    R.drawable.img_3_2
                 ),
                 answer = "FORMULA1"
             )
@@ -49,9 +43,7 @@ object QuestionList {
                 id = 3,
                 pictureList = mutableListOf(
                     R.drawable.img_4_1,
-                    R.drawable.img_4_2,
-                    R.drawable.img_4_3,
-                    R.drawable.img_4_4
+                    R.drawable.img_4_2
                 ),
                 answer = "AIRSOFT"
             )
@@ -61,14 +53,62 @@ object QuestionList {
             Question(
                 id = 4,
                 pictureList = mutableListOf(
-                    R.drawable.ic_launcher_background,
-                    R.drawable.ic_launcher_background,
-                    R.drawable.ic_launcher_background,
-                    R.drawable.ic_launcher_background
+                    R.drawable.img_5_1,
+                    R.drawable.img_5_2
                 ),
-                answer = "NOQAT"
+                answer = "TENNIS"
             )
         )
+        question.add(
+            Question(
+                id = 5,
+                pictureList = mutableListOf(
+                    R.drawable.img_6_1,
+                    R.drawable.img_6_2
+                ),
+                answer = "JUDO"
+            )
+        )
+        question.add(
+            Question(
+                id = 6,
+                pictureList = mutableListOf(
+                    R.drawable.img_7_1,
+                    R.drawable.img_7_2
+                ),
+                answer = "KERLING"
+            )
+        )
+        question.add(
+                Question(
+                    id = 7,
+                    pictureList = mutableListOf(
+                        R.drawable.img_8_1,
+                        R.drawable.img_8_2
+                    ),
+                    answer = "JUMPING"
+                )
+                )
+        question.add(
+                Question(
+                    id = 8,
+                    pictureList = mutableListOf(
+                        R.drawable.img_9_1,
+                        R.drawable.img_9_2
+                    ),
+                    answer = "POLO"
+                )
+                )
+        question.add(
+                Question(
+                    id = 9,
+                    pictureList = mutableListOf(
+                        R.drawable.img_10_1,
+                        R.drawable.img_10_2
+                    ),
+                    answer = "DARTS"
+                )
+                )
 
         return question
     }

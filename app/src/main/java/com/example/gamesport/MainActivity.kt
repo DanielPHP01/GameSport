@@ -71,38 +71,6 @@ class MainActivity : AppCompatActivity() {
                 binding.ivBigImage.visibility = View.GONE
             }
         }
-
-        binding.iv13.setOnClickListener {
-            binding.ivBigImage.setImageResource(QuestionList.getQuestions()[currentIndex % QuestionList.getQuestions().size].pictureList[2])
-            binding.ivBigImage.visibility = View.VISIBLE
-            binding.ivBigImage.startAnimation(AnimationUtils.loadAnimation(this, R.anim.scale_up_3))
-
-            binding.ivBigImage.setOnClickListener {
-                binding.ivBigImage.startAnimation(
-                    AnimationUtils.loadAnimation(
-                        this,
-                        R.anim.scale_down_3
-                    )
-                )
-                binding.ivBigImage.visibility = View.GONE
-            }
-        }
-
-        binding.iv14.setOnClickListener {
-            binding.ivBigImage.setImageResource(QuestionList.getQuestions()[currentIndex % QuestionList.getQuestions().size].pictureList[3])
-            binding.ivBigImage.visibility = View.VISIBLE
-            binding.ivBigImage.startAnimation(AnimationUtils.loadAnimation(this, R.anim.scale_up_4))
-
-            binding.ivBigImage.setOnClickListener {
-                binding.ivBigImage.startAnimation(
-                    AnimationUtils.loadAnimation(
-                        this,
-                        R.anim.scale_down_4
-                    )
-                )
-                binding.ivBigImage.visibility = View.GONE
-            }
-        }
     }
 
     /**
@@ -114,8 +82,7 @@ class MainActivity : AppCompatActivity() {
         binding.tvLevel.text = (currentIndex+ 1).toString()
         binding.iv11.setImageResource(question.pictureList[0])
         binding.iv12.setImageResource(question.pictureList[1])
-        binding.iv13.setImageResource(question.pictureList[2])
-        binding.iv14.setImageResource(question.pictureList[3])
+
 
         val answer = question.answer
         val answerOptions = answer.toCharArray().toMutableList()
